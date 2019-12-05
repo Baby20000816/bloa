@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-import './styles/color.less'
+
 //引用全局数据文件
 import global_ from '@/util/Global'
 Vue.prototype.GLOBAL = global_

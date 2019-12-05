@@ -5,6 +5,8 @@ import Nav from '@/views/Nav.vue'
 import SignIn from '@/views/SignIn.vue'
 import SignUp from '@/views/SignUp.vue'
 import Music from '@/views/Music.vue'
+import Audio from '@/views/Audio.vue'
+import Write from '@/views/Write.vue'
 
 import Index from '@/views/Index.vue'
 import Articles from '@/views/Articles.vue'
@@ -45,12 +47,20 @@ const routes = [{
 				component: ArticleDetail
 			},
 			{
+				path: 'write',
+				component: Write
+			},
+			{
 				path: 'topics',
 				component: Topics
 			},
 			{
 				path: 'music',
 				component: Music
+			},
+			{
+				path: 'audio',
+				component: Audio
 			},
 			{
 				path: 'topic/:id',
