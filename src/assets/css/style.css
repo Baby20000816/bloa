@@ -17,14 +17,14 @@ p {
 
 .meta {
 	font-size: 13px;
-	color: #b4b4b4;
+	color: #DDDDDD;
 }
 
 /* ---------主题设置----------- */
-.primary-fill {
+/* .primary-fill {
 	background-color: #009688;
 	color: #fff;
-}
+} */
 
 .primary-border {
 	border: 1px solid #009688;
@@ -161,7 +161,6 @@ p {
 	display: flex;
 	align-items: center;
 }
-
 .nav-item {
 	height: 70px;
 	line-height: 70px;

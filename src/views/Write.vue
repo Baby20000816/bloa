@@ -3,6 +3,7 @@
 		<div class="bl-col-8 left">
 			<div msgborder class="say-box">
 				称呼:<input type="text" v-model="articleAddDto.userId" class="border"/>
+				称呼:<input type="text" v-model="articleAddDto.topicId" class="border"/>
 				称呼:<input type="text" v-model="articleAddDto.title" class="border"/>
 				<br>
 				<br>
@@ -28,6 +29,7 @@
 				/* comment: JSON.parse(localStorage.getItem('comment')), */
 				articleAddDto: {
 				 	userId:'',
+					topicId:'',
 				/*	article_id:'', */
 					content:'',
 					title:'',
@@ -63,7 +65,7 @@
 					}).then(res => {
 						if (res.data.msg === '成功') {
 							alert('发布成功');
-							this.$router.push('/message');
+							this.$router.push('/write');
 						} else {
 							alert(res.data.msg);
 						}
